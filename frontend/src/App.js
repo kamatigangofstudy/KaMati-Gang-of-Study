@@ -315,21 +315,6 @@ const KaMaTi = () => {
                 </div>
               </div>
             </div>
-            {/* Testimonials - Right Side (vertical column) */}
-            <div className="hero-testimonials-right">
-              <div className="testimonials-vertical">
-                {[
-                  { url: process.env.PUBLIC_URL + '/Screenshot 2025-09-01 002729.png', alt: 'Student feedback 1' },
-                  { url: process.env.PUBLIC_URL + '/Screenshot 2025-09-01 003151.png', alt: 'Student feedback 2' },
-                  { url: process.env.PUBLIC_URL + '/Screenshot 2025-09-01 003240.png', alt: 'Student feedback 3' },
-                  { url: process.env.PUBLIC_URL + '/WhatsApp Image 2025-09-01 at 12.30.01 AM.jpeg', alt: 'Student feedback 4' }
-                ].map((testimonial, index) => (
-                  <div key={index} className="testimonial-card-vertical">
-                    <img src={testimonial.url} alt={testimonial.alt} className="testimonial-screenshot-vertical" />
-                  </div>
-                ))}
-              </div>
-            </div>
           </>
         )}
         {/* Glassmorphism Footer - Always at Bottom */}
@@ -350,8 +335,7 @@ const KaMaTi = () => {
 			  <p>© 2025 KaMaTi Gang</p>
             </div>
           </div>
-        </footer>
-  )
+    </footer>
 
         {activeSection === 'community' && (
           <div className="community-section">
